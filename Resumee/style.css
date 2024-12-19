@@ -1,0 +1,83 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Page Layout */
+.page {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: whitesmoke;
+    width: 100%; /* Ensure the page container takes full width */
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border: solid black;
+    box-sizing: border-box;
+}
+
+/* Left Section */
+.left-section {
+    padding: 20px;
+    width: 35%; 
+    text-align: center;
+    
+   
+}
+
+
+/* Right Section */
+.right-section {
+    padding: 20px;
+    width: 65%; 
+    color: black;
+   
+ } 
+
+/* Section Title Styling */
+h2 {
+    font-size: 18px;
+    padding: 10px; /* Adjust padding to ensure it fits well */
+    margin: 20px 0;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #726d6d;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border: solid;
+    width: 100%;  /* Ensure h2 takes full width */
+    box-sizing: border-box; /* Ensures padding and border don't push outside */
+    overflow-wrap: break-word; /* Prevent text from overflowing */
+    text-align: center; /* Center the text */
+    box-sizing: border-box;
+}
+
+/* Preventing overflow on smaller screens */
+@media (max-width: 768px) {
+    .page {
+        flex-direction: column; /* Stack sections vertically */
+        padding: 10px; /* Add padding to the page container */
+    }
+
+    .left-section, .right-section {
+        width: 100%; /* Make sections full width on mobile */
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 16px;
+        margin: 15px 0; /* Reduce margins for mobile view */
+    }
+}
+
+/* Additional Media Queries for Very Small Screens */
+@media (max-width: 480px) {
+    h2 {
+        font-size: 14px; /* Smaller font size for very small screens */
+        padding: 8px;
+    }
+}
+ 
